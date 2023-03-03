@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fkB-0e-lra">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="v76-YM-IQp">
+            <objects>
+                <navigationController id="fkB-0e-lra" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xkE-OF-kWW">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2q8-hc-0rp" kind="relationship" relationship="rootViewController" id="Cxx-r4-5DH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R6g-gx-4pB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-943" y="192"/>
+        </scene>
+        <!--All Games View Controller-->
+        <scene sceneID="bV6-nk-zGP">
+            <objects>
+                <viewController id="2q8-hc-0rp" customClass="AllGamesViewController" customModule="MobileDevAssignment2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xqp-a0-vYL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNE-Nl-feA">
+                                <rect key="frame" x="67" y="369" width="281" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Chemical Reactions">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="chemReactBtnAction:" destination="2q8-hc-0rp" eventType="touchUpInside" id="2po-6c-00y"/>
+                                    <segue destination="ndZ-mZ-81g" kind="show" id="AGP-uj-IL1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOm-Hk-zGe">
+                                <rect key="frame" x="67" y="527" width="281" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Animal Sound">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="animalSoundBtnAction:" destination="2q8-hc-0rp" eventType="touchDown" id="3tP-cy-Cuk"/>
+                                    <segue destination="ndZ-mZ-81g" kind="show" id="wbz-2D-zLn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nf8-1M-3LN">
+                                <rect key="frame" x="67" y="685" width="281" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Diagrams">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="ndZ-mZ-81g" kind="show" id="6Yh-aH-Bfx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFN-TL-jXZ">
+                                <rect key="frame" x="67" y="213" width="281" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Food Chain">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="foodChainBtnAction:" destination="2q8-hc-0rp" eventType="touchUpInside" id="ULk-V5-pCk"/>
+                                    <segue destination="ndZ-mZ-81g" kind="show" id="ift-DI-zsg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ITO-Qc-eze"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="E4Y-Wb-eRG"/>
+                    <connections>
+                        <outlet property="animalSoundBtn" destination="iOm-Hk-zGe" id="M9v-0L-CUy"/>
+                        <outlet property="chemReactBtn" destination="fNE-Nl-feA" id="AEa-8D-dRv"/>
+                        <outlet property="foodChainBtn" destination="SFN-TL-jXZ" id="Lez-s1-R4q"/>
+                        <segue destination="ndZ-mZ-81g" kind="show" id="bmv-Ui-3D0"/>
+                        <segue destination="ndZ-mZ-81g" kind="show" id="zCH-8M-sl0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9AA-UK-G7M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-197.10144927536234" y="191.51785714285714"/>
+        </scene>
+        <!--Game Menu View Controller-->
+        <scene sceneID="4m4-fK-5y7">
+            <objects>
+                <viewController id="ndZ-mZ-81g" customClass="GameMenuViewController" customModule="MobileDevAssignment2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="raz-Rl-Mu3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OhS-o3-JJ9">
+                                <rect key="frame" x="83" y="369" width="249" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Play">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="playGameBtnAction:" destination="ndZ-mZ-81g" eventType="touchUpInside" id="tMb-Lq-I7g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oaq-of-BK2">
+                                <rect key="frame" x="83" y="587" width="249" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Tutorial">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="tutorialBtnAction:" destination="ndZ-mZ-81g" eventType="touchUpInside" id="1pH-Qp-k71"/>
+                                    <segue destination="Blf-hd-gVH" kind="show" id="mJ6-S9-PKq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title of Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4p-hE-JCq">
+                                <rect key="frame" x="20" y="182" width="374" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JYJ-Vb-r4N"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="K4h-nF-bsr"/>
+                    <connections>
+                        <outlet property="gameTitle" destination="q4p-hE-JCq" id="oPz-Bi-yOn"/>
+                        <segue destination="IpC-zH-Hie" kind="show" identifier="menuToFoodChainsSegue" id="Ozh-bL-kX6"/>
+                        <segue destination="nu5-1S-Gdt" kind="show" identifier="menuToChemReactSegue" id="efZ-Z6-JKP"/>
+                        <segue destination="aR5-gV-tkV" kind="show" identifier="menuToAnimalSoundView" id="lZr-BV-tkU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tcP-dW-cV3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="518.84057971014499" y="191.51785714285714"/>
+        </scene>
+        <!--Food Chain View Controller-->
+        <scene sceneID="j7j-Gk-nd5">
+            <objects>
+                <viewController id="IpC-zH-Hie" customClass="FoodChainViewController" customModule="MobileDevAssignment2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CSz-wM-hgj" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4n-iL-pNH">
+                                <rect key="frame" x="109" y="117" width="197" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="li2-IL-6Is"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="JrZ-Wm-7Kf" appends="YES" id="fBZ-xz-D0Q"/>
+                            <outletCollection property="gestureRecognizers" destination="f9E-GB-Fpy" appends="YES" id="cKM-pj-42i"/>
+                            <outletCollection property="gestureRecognizers" destination="L4x-E5-lJk" appends="YES" id="XuR-zw-swv"/>
+                            <outletCollection property="gestureRecognizers" destination="DFX-tC-V95" appends="YES" id="Yxq-BF-c5K"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="umI-JJ-AeR"/>
+                    <connections>
+                        <outlet property="myLabel" destination="c4n-iL-pNH" id="wsp-vI-zoU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WEV-C6-ERW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="JrZ-Wm-7Kf">
+                    <connections>
+                        <action selector="swipeRightAction:" destination="IpC-zH-Hie" id="awp-En-Of0"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="f9E-GB-Fpy">
+                    <connections>
+                        <action selector="swipedLeftAction:" destination="IpC-zH-Hie" id="fXU-k0-myh"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="L4x-E5-lJk">
+                    <connections>
+                        <action selector="swipeUpAction:" destination="IpC-zH-Hie" id="t0H-Ri-qul"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="DFX-tC-V95">
+                    <connections>
+                        <action selector="swipeDownAction:" destination="IpC-zH-Hie" id="11Y-L2-cdB"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1399" y="-121"/>
+        </scene>
+        <!--Animal Sound View Controller-->
+        <scene sceneID="A8U-fg-km5">
+            <objects>
+                <viewController id="aR5-gV-tkV" customClass="AnimalSoundViewController" customModule="MobileDevAssignment2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DDz-zN-D3P">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sound.png" translatesAutoresizingMaskIntoConstraints="NO" id="rca-mR-Jr9">
+                                <rect key="frame" x="20" y="68" width="374" height="192"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dog.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qg5-T2-Zqq">
+                                <rect key="frame" x="20" y="352" width="186" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="ubv-0b-dkr">
+                                <rect key="frame" x="214" y="352" width="180" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="donkey.png" translatesAutoresizingMaskIntoConstraints="NO" id="hON-gl-Ygh">
+                                <rect key="frame" x="20" y="502" width="186" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="frog.png" translatesAutoresizingMaskIntoConstraints="NO" id="PtN-cj-R5R">
+                                <rect key="frame" x="214" y="502" width="180" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fox.png" translatesAutoresizingMaskIntoConstraints="NO" id="P6p-3j-DZb">
+                                <rect key="frame" x="20" y="652" width="186" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="goat.png" translatesAutoresizingMaskIntoConstraints="NO" id="nnr-jF-70H">
+                                <rect key="frame" x="214" y="652" width="180" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wd3-UU-z6X">
+                                <rect key="frame" x="20" y="788" width="374" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2b5-Q8-qeb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Zj1-lV-dHT"/>
+                    <connections>
+                        <outlet property="audioImgView" destination="rca-mR-Jr9" id="RZd-p0-Osx"/>
+                        <outlet property="catImgView" destination="ubv-0b-dkr" id="hsm-3p-nkS"/>
+                        <outlet property="dogImgView" destination="Qg5-T2-Zqq" id="AkZ-6X-68C"/>
+                        <outlet property="donkeyImgView" destination="hON-gl-Ygh" id="oUY-0P-gOO"/>
+                        <outlet property="foxImgView" destination="P6p-3j-DZb" id="lpK-dv-fVt"/>
+                        <outlet property="frogImgView" destination="PtN-cj-R5R" id="JiN-vQ-Gix"/>
+                        <outlet property="goatImgView" destination="nnr-jF-70H" id="lOu-EY-VI4"/>
+                        <outlet property="resultLabel" destination="wd3-UU-z6X" id="LoP-9Z-med"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t72-5V-bg8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="519" y="864"/>
+        </scene>
+        <!--Chem React View Controller-->
+        <scene sceneID="w9f-nG-P8c">
+            <objects>
+                <viewController id="nu5-1S-Gdt" customClass="ChemReactViewController" customModule="MobileDevAssignment2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sUb-kk-jf8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lab_flask.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="C3p-Tf-d9G">
+                                <rect key="frame" x="87" y="338" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="YeR-Mu-BPN" appends="YES" id="7h6-ZI-exr"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NMZ-nt-Kld"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0pc-pg-FgN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d8i-PD-Nsv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="YeR-Mu-BPN">
+                    <connections>
+                        <action selector="panPerformed:" destination="nu5-1S-Gdt" id="qgQ-SY-dtf"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1872.4637681159422" y="388.39285714285711"/>
+        </scene>
+        <!--Controls-->
+        <scene sceneID="gug-2A-hof">
+            <objects>
+                <viewController id="S4s-zW-jV6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r9S-Or-6ae">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Controls" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1CA-XA-yPu">
+                                <rect key="frame" x="20" y="138" width="374" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pnB-3o-2zV">
+                                <rect key="frame" x="28" y="274" width="359" height="325"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">For the food chain, swipe yor fingers to control the player. For 'Animal Sound' tap on the audio icon to hear a sound and tap the animal you think makes the sound. For the Chemical Reaction, drag the correct beakers to the bigger beaker </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aj4-3S-wAB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Controls" id="BnD-E3-ix9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SjX-YE-dyO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2715.9420289855075" y="722.54464285714278"/>
+        </scene>
+        <!--Tutorial-->
+        <scene sceneID="YeB-t1-PoA">
+            <objects>
+                <viewController id="LWR-I5-jJZ" customClass="TutorialOverviewController" customModule="MobileDevAssignment2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yNn-DT-waB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tutorial Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baj-g1-uiC">
+                                <rect key="frame" x="20" y="119" width="374" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tutorial Body" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWL-f8-HXW">
+                                <rect key="frame" x="20" y="228" width="374" height="470"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tsH-8e-8TV"/>
+                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Tutorial" id="xJj-Hm-wph"/>
+                    <connections>
+                        <outlet property="tutorialBody" destination="nWL-f8-HXW" id="pUx-2U-X5H"/>
+                        <outlet property="tutorialTitle" destination="baj-g1-uiC" id="dbr-O7-YbV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tnZ-Px-gIc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2624.6376811594205" y="1395.5357142857142"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="PNf-Hu-XUE">
+            <objects>
+                <tabBarController id="Blf-hd-gVH" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ICb-rU-MUp"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0fB-xK-WbL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="LWR-I5-jJZ" kind="relationship" relationship="viewControllers" id="PAB-bT-8Wa"/>
+                        <segue destination="S4s-zW-jV6" kind="relationship" relationship="viewControllers" id="lJ4-XO-Pm3"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b1B-Sz-iVF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1604" y="701"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="wbz-2D-zLn"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="cat.png" width="840" height="859"/>
+        <image name="dog.png" width="348" height="273"/>
+        <image name="donkey.png" width="840" height="859"/>
+        <image name="fox.png" width="224" height="280"/>
+        <image name="frog.png" width="840" height="859"/>
+        <image name="goat.png" width="840" height="859"/>
+        <image name="lab_flask.jpeg" width="232.5" height="384"/>
+        <image name="sound.png" width="320" height="320"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
